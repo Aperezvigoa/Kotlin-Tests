@@ -1,8 +1,7 @@
-import java.io.File
-import javax.imageio.ImageIO
-import java.awt.image.BufferedImage
-import java.awt.Color
-import java.awt.Image
+import java.io.File                   // Import the File class for file handling
+import javax.imageio.ImageIO          // Import the ImageIO class for reading and writing images
+import java.awt.image.BufferedImage   // BufferedImage Class
+import java.awt.Color                 // Color class
 
 fun main() {
     // Image creation with size of 256 x 256
@@ -12,7 +11,7 @@ fun main() {
     for (i in 0 until myCustomImage.width) {
         for (j in 0 until myCustomImage.height) {
 
-            myCustomImage.setRGB(i, j, Color(255, 0, 255, j).rgb)
+            myCustomImage.setRGB(i, j, Color(0 + i, 0 + j, 50, j).rgb)
         }
     }
     val separator = File.separator
