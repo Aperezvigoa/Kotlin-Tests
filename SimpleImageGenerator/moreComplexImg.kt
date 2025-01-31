@@ -28,7 +28,7 @@ fun drawCircles(): BufferedImage {
 }
 
 fun main() {
-    val outputForImage = File("C:\\\\\\\\Users\\\\\\\\Cheddar\\\\\\\\Desktop\\\\\\\\alpha.png")
+    val outputForImage = File("YOURPATH")
     val image = drawCircles()
 
     ImageIO.write(image, "png", outputForImage)
